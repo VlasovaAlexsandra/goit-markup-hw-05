@@ -30,15 +30,16 @@ html {
 li :last-child {
     margin-right: 0;      
 }
+
 /* 
 img {
     /* display: inline-block; */
     /* margin-right: 30px;   
 } */ 
 
-img:not(last-child) {
+/* img:not(last-child) {
     margin-right: 30px;
-}
+} */
 
 img {
     display: block;
@@ -290,6 +291,30 @@ img {
     margin-right: 30px;
 }
 
+.thumb {
+    display: flex;
+    position: relative;    
+}
+
+.thumb > .label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    
+    /* font-family: sans-serif; */
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--footer-text-color);
+}
 
 .list .comands {    
     background-color: var(--header-bg-color);
