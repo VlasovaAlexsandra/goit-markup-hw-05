@@ -462,6 +462,8 @@ img {
     padding-top: 34px;
 }
 
+/* Портфолио */
+
 .list-projects {
     display: flex;
     flex-wrap: wrap;
@@ -509,6 +511,41 @@ img {
     font-size: 16px;
     line-height: 1.87;    
     letter-spacing: 0.03em; 
+}
+
+.box {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+}
+
+.box:hover .box-overlay {
+    transform: translatey(0);
+}
+
+.box-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transform: translatey(100%);
+    transition: transform 250ms ease;
+}
+
+.text-overlay {
+    color: var(--hero-text-color);
+    margin: 0;
+    padding-top: 63px;
+    padding-right: 15px;
+    padding-bottom: 63px;
+    padding-left: 33px;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
 }
 
 .btn {
