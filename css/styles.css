@@ -602,8 +602,7 @@ img {
 
 
 .btn .button.primary {
-    padding: 6px 22px;
-       
+    padding: 6px 22px;       
 
     background-color: var(--button-bg-color);
     color: var(--button-text-color);
@@ -719,3 +718,46 @@ img {
     padding-left: 15px;
 }
 
+/* модалка  */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 200px;
+    min-height: 200px;  
+
+    background: #FFFFFF;       
+}
+
+.button-close {
+    box-sizing: border-box;
+    padding: 6px;       
+
+    background-color: var(--primary-bg-color);
+    color: var(--logo-text-color);
+
+    font-family: inherit;      
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;   
+   
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+}
