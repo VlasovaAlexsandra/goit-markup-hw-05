@@ -49,7 +49,11 @@ img {
 
 /* header */
 .page-header {
-    background-color: var(--header-bg-color);
+    background-color: var(--header-bg-color);     
+}
+
+.page-header.border {
+    border: 1px solid #ECECEC;
 }
 
 /* logo */
@@ -762,19 +766,8 @@ img {
     width: 30px;
     height: 30px;
     background-color: transparent;
-    
-    /* justify-content: center;
-    align-items: center; */
-    
-    /* margin-bottom: 50px;
-    margin-bottom: 0;  
-
-    padding: 6px;        */
-
 
     border: 0px;
-   
- 
 }
 
 .button-close:hover,
